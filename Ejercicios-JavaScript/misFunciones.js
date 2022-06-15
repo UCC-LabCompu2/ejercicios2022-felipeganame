@@ -100,3 +100,13 @@ function calcular_suma(){
   num2=document.getElementByName("div_num1")[0].value;
   document.getElementsByName("div_total")[0].value= num1 / Number(num2);
 }
+
+function cargarWeb(){
+  var cant, unidad, urlComp;
+
+  cant = document.getElementById("distancia").value;
+  unidad = document.getElementsByName("unidades")[0].value;
+
+  urlComp = "segundaWeb.html#" + cant + "#" + unidad;
+  window.open(urlComp);
+}
